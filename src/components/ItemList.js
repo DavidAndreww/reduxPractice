@@ -6,7 +6,7 @@ const ItemList = props => {
     <div>
       {props.itemList.map((x, index) => (
         <div>
-          <span>{x.itemText} </span>
+          <span>{index}: {x.itemText} </span>
           <button> Delete</button>
         </div>
       ))}

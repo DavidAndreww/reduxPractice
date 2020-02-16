@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
-const itemList = (state = [], actions) => {
-  switch(actions.type){
+const itemList = (state = [], action) => {
+  switch(action.type){
+    case 'ADD_TODO':
+      return [ ...state, action.value ]
     default: 
     return state
   }

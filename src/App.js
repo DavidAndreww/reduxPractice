@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header'
-import TextField from './components/TextField';
+import TextField from './containers/TextField';
 import ItemList from './containers/ItemList';
 
 function App() {
