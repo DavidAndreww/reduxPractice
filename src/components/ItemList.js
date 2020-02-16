@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const ItemList = () => {
+const ItemList = props => {
+    console.log(props.itemList.map(x => x.itemText));
   return (
-    <p>items listed here</p>
-  )
-}
+    <div>
+      {props.itemList.map((x, index) => (
+        <div>
+          <span>{x.itemText} </span>
+          <button> Delete</button>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default ItemList
+export default ItemList;

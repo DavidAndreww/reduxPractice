@@ -1,5 +1,8 @@
 const state = {
-  itemList: [],
+  itemList: [{
+    itemText: 'Buy A Car',
+    itemId: 1
+  }],
   itemText: '',
   itemId: 0
 }
