@@ -1,23 +1,12 @@
-import React from 'react';
+import React from "react";
 
-class TextField extends React.Component {
-  state = {
-    itemText: '',
-    itemId: 0
-  }
+const TextField = () => {
+  return (
+    <div>
+      <input type="text" placeholder="whaddya gotta do?" />
+      <button>Add Item</button>
+    </div>
+  );
+};
 
-  handleInputChange = (e) => {
-    this.setState({itemText: e.target.value})
-  }
-
-  render(){
-    return (
-      <div>
-        <input type = "text" placeholder="whaddya gotta do?" value={this.state.itemText} onChange={this.handleInputChange}/>
-        <button onClick={() => this.props.addToDo(this.state.itemText)}>Add Item</button>
-      </div>
-    )
-  }
-} 
-
-export default TextField
+export default TextField;

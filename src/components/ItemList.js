@@ -1,15 +1,9 @@
 import React from "react";
 
-const ItemList = props => {
-    console.log(props.itemList.map(x => x.itemText));
+const ItemList = () => {
   return (
     <div>
-      {props.itemList.map((x, index) => (
-        <div>
-          <span>{index}: {x.itemText} </span>
-          <button> Delete</button>
-        </div>
-      ))}
+      <p>list of items here</p>
     </div>
   );
 };

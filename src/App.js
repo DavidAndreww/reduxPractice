@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './components/Header'
-import TextField from './containers/TextField';
-import ItemList from './containers/ItemList';
+import TextField from './components/TextField';
+import ItemList from './components/ItemList';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
